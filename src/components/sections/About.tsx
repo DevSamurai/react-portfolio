@@ -25,63 +25,65 @@ export default function About() {
             </p>
 
             <table className="mt-4 w-full text-sm">
-              <tr>
-                <td className="font-headline font-bold uppercase text-blue-900">
-                  Idade:
-                </td>
-                <td>40</td>
-              </tr>
-              <tr>
-                <td className="font-headline font-bold uppercase text-blue-900">
-                  Celular:
-                </td>
-                <td>
-                  <a
-                    href="tel:+551299999999"
-                    className="underline hover:text-blue-800"
-                  >
-                    +55 12 9.999-9999
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td className="font-headline font-bold uppercase text-blue-900">
-                  Email:
-                </td>
-                <td>
-                  <a
-                    href="mailto:ffontouras@gmail.com"
-                    className="underline hover:text-blue-800"
-                  >
-                    ffontouras@gmail.com
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td className="font-headline font-bold uppercase text-blue-900">
-                  Endereço:
-                </td>
-                <td>
-                  <a
-                    href="https://goo.gl/maps/4yacADQtLB8jz8zn9?coh=178573&entry=tt"
-                    target="_blank"
-                    className="underline hover:text-blue-800"
-                  >
-                    São José dos Campos - SP
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td className="font-headline font-bold uppercase text-blue-900">
-                  Disponível:
-                </td>
-                <td>
-                  <span className="relative flex h-3 w-3">
-                    <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75"></span>
-                    <span className="relative inline-flex h-3 w-3 rounded-full bg-green-500"></span>
-                  </span>
-                </td>
-              </tr>
+              <tbody>
+                <tr>
+                  <td className="font-headline font-bold uppercase text-blue-900">
+                    Idade:
+                  </td>
+                  <td>40</td>
+                </tr>
+                <tr>
+                  <td className="font-headline font-bold uppercase text-blue-900">
+                    Celular:
+                  </td>
+                  <td>
+                    <a
+                      href="tel:+551299999999"
+                      className="underline hover:text-blue-800"
+                    >
+                      +55 12 9.999-9999
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td className="font-headline font-bold uppercase text-blue-900">
+                    Email:
+                  </td>
+                  <td>
+                    <a
+                      href="mailto:ffontouras@gmail.com"
+                      className="underline hover:text-blue-800"
+                    >
+                      ffontouras@gmail.com
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td className="font-headline font-bold uppercase text-blue-900">
+                    Endereço:
+                  </td>
+                  <td>
+                    <a
+                      href="https://goo.gl/maps/4yacADQtLB8jz8zn9?coh=178573&entry=tt"
+                      target="_blank"
+                      className="underline hover:text-blue-800"
+                    >
+                      São José dos Campos - SP
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td className="font-headline font-bold uppercase text-blue-900">
+                    Disponível:
+                  </td>
+                  <td>
+                    <span className="relative flex h-3 w-3">
+                      <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75"></span>
+                      <span className="relative inline-flex h-3 w-3 rounded-full bg-green-500"></span>
+                    </span>
+                  </td>
+                </tr>
+              </tbody>
             </table>
           </div>
           <div className="absolute -left-2 -top-4 h-24 w-20 rounded-lg bg-gray-600 md:-left-12 md:-top-12 md:h-72 md:w-56">

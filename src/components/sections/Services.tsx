@@ -2,6 +2,7 @@ interface Service {
   title: string
   description: string
   backgroundColor: string
+  textColor: string
 }
 
 export default function Services() {
@@ -10,17 +11,20 @@ export default function Services() {
       title: "Web",
       description:
         "Desenvolvimento de sites e sistemas web estáticos e dinâmicos com React.js, Next.js, HTML5 e CSS3.",
-      backgroundColor: "bg-stone-100",
+      backgroundColor: "bg-[#d6e5f1]",
+      textColor: "text-blue-900",
     },
     {
       title: "Sistemas",
       description: "Desenvolvimento de sistemas e APIs REST com Node.js.",
-      backgroundColor: "bg-stone-100",
+      backgroundColor: "bg-[#f1e2d6]",
+      textColor: "text-blue-900",
     },
     {
       title: "Mobile",
       description: "Desenvolvimento de aplicativos Android e iOS.",
-      backgroundColor: "bg-stone-100",
+      backgroundColor: "bg-[#f7f1fe]",
+      textColor: "text-blue-900",
     },
   ]
 
@@ -41,14 +45,14 @@ export default function Services() {
       </div>
 
       <div className="mt-6 flex flex-col gap-2 md:flex-row">
-        {services.map((service) => (
+        {services.map((service, index) => (
           <div
-            className={`basis-1/3 rounded-lg p-4 ${service.backgroundColor}`}
-            key={service.title}
+            className={`basis-1/3 rounded-lg p-4 ${service.backgroundColor} ${service.textColor}`}
+            key={`service-${index}`}
           >
             <div className="mb-2 flex h-20 w-20 items-center justify-center rounded-lg bg-gray-300" />
-            <h3 className="text-xl font-bold text-blue-900">{service.title}</h3>
-            <p className="text-sm text-gray-600">{service.description}</p>
+            <h3 className="text-xl font-bold">{service.title}</h3>
+            <p className="text-sm">{service.description}</p>
           </div>
         ))}
       </div>
