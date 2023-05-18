@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <>
       <section className="rounded-br-[80px] bg-gradient-to-tr from-black to-gray-900 text-white md:rounded-br-[180px]">
-        <div className="container mx-auto flex max-w-7xl flex-col-reverse p-4 py-12 md:flex-row">
+        <div className="container mx-auto flex max-w-4xl flex-col-reverse p-4 py-12 md:flex-row">
           <div className="basis-1/2">
             <h1 className="mb-6 text-center md:text-left">
               <span className="block font-handwriting text-3xl">
@@ -48,10 +48,10 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="basis-1"></div>
+          <div className="basis-1/2"></div>
         </div>
       </section>
-      <div className="absolute left-0 -mt-2 h-3 w-1/2 rounded-r-full bg-gradient-to-r from-blue-700 to-blue-600 md:w-96" />
+      <div className="absolute left-0 -mt-2 h-3 w-1/4 rounded-r-full bg-gradient-to-r from-blue-700 to-blue-600 md:w-1/3" />
     </>
   )
 }
