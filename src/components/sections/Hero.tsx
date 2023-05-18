@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <>
       <section className="rounded-br-[80px] bg-gradient-to-tr from-black to-gray-900 text-white md:rounded-br-[180px]">
-        <div className="max-w-7xlxl container mx-auto flex flex-col-reverse p-4 py-12 md:flex-row">
+        <div className="container mx-auto flex max-w-7xl flex-col-reverse p-4 py-12 md:flex-row">
           <div className="basis-1/2">
             <h1 className="mb-6 text-center md:text-left">
               <span className="block font-handwriting text-3xl">

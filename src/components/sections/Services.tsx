@@ -1,12 +1,5 @@
-interface Service {
-  title: string
-  description: string
-  backgroundColor: string
-  textColor: string
-}
-
 export default function Services() {
-  const services: Service[] = [
+  const services = [
     {
       title: "Web",
       description:

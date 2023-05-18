@@ -1,4 +1,5 @@
 import About from "./components/sections/About"
+import Contact from "./components/sections/Contact"
 import Experiences from "./components/sections/Experiences"
 import Hero from "./components/sections/Hero"
 import Portfolio from "./components/sections/Portfolio"
@@ -14,6 +15,7 @@ function App() {
       <Experiences />
       <Skills />
       <Portfolio />
+      <Contact />
     </main>
   )
 }

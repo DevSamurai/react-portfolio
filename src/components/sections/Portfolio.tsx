@@ -6,30 +6,35 @@ export default function Portfolio() {
       title: "Projeto 1",
       description: "Descrição do projeto 1",
       image: "https://via.placeholder.com/580x200",
+      link: "#",
       colSpan: "col-span-1",
     },
     {
       title: "Projeto 2",
       description: "Descrição do projeto 2",
       image: "https://via.placeholder.com/580x200",
+      link: "#",
       colSpan: "col-span-2",
     },
     {
       title: "Projeto 3",
       description: "Descrição do projeto 3",
       image: "https://via.placeholder.com/580x200",
+      link: "#",
       colSpan: "col-span-1",
     },
     {
       title: "Projeto 4",
       description: "Descrição do projeto 4",
       image: "https://via.placeholder.com/580x200",
+      link: "#",
       colSpan: "col-span-1",
     },
     {
       title: "Projeto 5",
       description: "Descrição do projeto 5",
       image: "https://via.placeholder.com/580x200",
+      link: "#",
       colSpan: "col-span-1",
     },
   ]
@@ -62,7 +67,7 @@ export default function Portfolio() {
                 {project.title}
               </h4>
               <p className=" mb-4 text-sm">{project.description}</p>
-              <a href="#" className="">
+              <a href={project.link} target="_blank">
                 <HiArrowTopRightOnSquare className="h-6 w-6" />
               </a>
             </div>
