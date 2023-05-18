@@ -26,7 +26,7 @@ export default function Testimonials() {
         <figcaption className="flex items-center justify-center gap-2">
           <img
             className="h-6 w-6 rounded-full"
-            src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png"
+            src="https://images.unsplash.com/photo-1628157588553-5eeea00af15c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGF2YXRhciUyMHBob3RvfGVufDB8fDB8fHww&auto=format&fit=crop&w=50&q=60"
             alt="João da Silva"
           />
           <div className="flex items-center divide-x-2 divide-gray-200">

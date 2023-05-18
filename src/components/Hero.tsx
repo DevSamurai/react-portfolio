@@ -11,10 +11,10 @@ export default function Hero() {
                 Olá, me chamo
               </span>
               <span className="mr-2 font-headline text-5xl font-semibold">
-                Felipe
+                João
               </span>
               <span className="font-headline text-5xl font-light text-blue-400">
-                Fontoura
+                Henrique
               </span>
             </h1>
 
@@ -31,7 +31,7 @@ export default function Hero() {
 
             <div className="flex items-center justify-center gap-2 md:justify-start">
               <a
-                href="#"
+                href="#contact"
                 className="underline-thickness-2 font-bold text-white underline decoration-2 underline-offset-4 transition hover:decoration-blue-700"
               >
                 Fale comigo
@@ -48,7 +48,7 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="basis-1">foto</div>
+          <div className="basis-1"></div>
         </div>
       </section>
       <div className="absolute left-0 -mt-2 h-3 w-1/2 rounded-r-full bg-gradient-to-r from-blue-700 to-blue-600 md:w-96" />

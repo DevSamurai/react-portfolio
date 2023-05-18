@@ -1,23 +1,26 @@
+import {
+  HiCommandLine,
+  HiComputerDesktop,
+  HiDevicePhoneMobile,
+} from "react-icons/hi2"
+
 export default function Services() {
   const services = [
     {
       title: "Web",
       description:
         "Desenvolvimento de sites e sistemas web estáticos e dinâmicos com React.js, Next.js, HTML5 e CSS3.",
-      backgroundColor: "bg-blue-700",
-      textColor: "text-white",
+      icon: <HiComputerDesktop className="h-12 w-12" />,
     },
     {
       title: "Sistemas",
       description: "Desenvolvimento de sistemas e APIs REST com Node.js.",
-      backgroundColor: "bg-blue-700",
-      textColor: "text-white",
+      icon: <HiCommandLine className="h-12 w-12" />,
     },
     {
       title: "Mobile",
       description: "Desenvolvimento de aplicativos Android e iOS.",
-      backgroundColor: "bg-blue-700",
-      textColor: "text-white",
+      icon: <HiDevicePhoneMobile className="h-12 w-12" />,
     },
   ]
 
@@ -40,10 +43,10 @@ export default function Services() {
       <div className="mt-6 flex flex-col gap-2 md:flex-row">
         {services.map((service, index) => (
           <div
-            className={`basis-1/3 rounded-lg p-4 ${service.backgroundColor} ${service.textColor}`}
+            className="basis-1/3 rounded-lg bg-blue-700 p-4 text-white"
             key={`service-${index}`}
           >
-            <div className="mb-2 flex h-20 w-20 items-center justify-center rounded-lg bg-gray-300" />
+            <div className="mb-2">{service.icon}</div>
             <h3 className="text-xl font-bold">{service.title}</h3>
             <p className="text-sm">{service.description}</p>
           </div>

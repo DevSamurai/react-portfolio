@@ -3,7 +3,10 @@ import { HiAcademicCap, HiCodeBracketSquare } from "react-icons/hi2"
 export default function Skills() {
   const educations = [
     {
-      name: "University of Vale do Paraíba 2001 - 2006 BSc, Computer Engineering",
+      name: "Curso de Desenvolvimento Web Full Stack | Dev Samurai",
+    },
+    {
+      name: "Curso de Desenvolvimento Mobile | Dev Samurai",
     },
   ]
 
@@ -43,8 +46,8 @@ export default function Skills() {
             </span>
           </h2>
           <p className="relative text-sm text-gray-700">
-            Sou um engenheiro da computação formado em 2006 com conhecimento em
-            diversas tecnologias.
+            Front-end Developer | React.js | React Native | Node.js | TypeScript
+            | JavaScript
           </p>
           <div className="absolute left-1/2 top-3 z-0 h-10 w-10 rounded-lg bg-blue-400/10" />
         </div>
@@ -59,7 +62,7 @@ export default function Skills() {
             {educations.map((education, index) => (
               <div
                 key={`education-${index}`}
-                className="rounded-lg bg-white p-4 font-semibold text-gray-900"
+                className="mb-2 rounded-lg bg-white p-4 text-sm font-semibold text-gray-900"
               >
                 {education.name}
               </div>

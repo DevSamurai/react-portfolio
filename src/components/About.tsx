@@ -7,8 +7,8 @@ export default function About() {
           <span className="font-handwriting text-4xl">Mim</span>
         </h2>
         <p className="relative text-sm text-gray-600">
-          Tenho mais de 25 anos de experiência com projetos, e gostaria de
-          trabalhar no seu projeto.
+          Tenho mais de 10 projetos executados e gostaria que o próximo seja o
+          seu.
         </p>
         <div className="absolute left-1/2 top-3 z-0 h-10 w-10 rounded-lg bg-blue-100/40" />
       </div>
@@ -20,7 +20,7 @@ export default function About() {
             <p>
               <span className="mr-1">Meu nome é</span>
               <span className="font-headline font-bold uppercase text-blue-900">
-                Felipe Fontoura
+                João Henrique
               </span>
             </p>
 
@@ -30,7 +30,7 @@ export default function About() {
                   <td className="font-headline font-bold uppercase text-blue-900">
                     Idade:
                   </td>
-                  <td>40</td>
+                  <td>28</td>
                 </tr>
                 <tr>
                   <td className="font-headline font-bold uppercase text-blue-900">
@@ -51,10 +51,10 @@ export default function About() {
                   </td>
                   <td>
                     <a
-                      href="mailto:ffontouras@gmail.com"
+                      href="mailto:joao-test@testemail.com"
                       className="underline hover:text-blue-800"
                     >
-                      ffontouras@gmail.com
+                      joao-test@testemail.com
                     </a>
                   </td>
                 </tr>
@@ -86,9 +86,7 @@ export default function About() {
               </tbody>
             </table>
           </div>
-          <div className="absolute -left-2 -top-4 h-24 w-20 rounded-lg bg-gray-600 md:-left-12 md:-top-12 md:h-72 md:w-56">
-            foto
-          </div>
+          <div className="absolute -left-2 -top-4 h-24 w-20 rounded-lg bg-gray-600 bg-[url(https://images.unsplash.com/photo-1601455763557-db1bea8a9a5a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGF2YXRhciUyMHBob3RvfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60)] bg-cover bg-center md:-left-12 md:-top-12 md:h-72 md:w-56"></div>
         </div>
       </div>
     </section>
