@@ -32,7 +32,7 @@ export default function Skills() {
 
   return (
     <section className="rounded-br-[80px] bg-gray-300 md:rounded-br-[180px]">
-      <div className="container mx-auto max-w-7xl p-4 py-12">
+      <div className="container mx-auto max-w-4xl p-4 py-12">
         <div className="relative mb-4 p-4 text-center">
           <h2 className="relative z-50 mb-2 font-bold">
             <span className="mr-2 font-headline text-3xl text-gray-800">

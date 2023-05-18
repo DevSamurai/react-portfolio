@@ -1,22 +1,28 @@
 import About from "./components/sections/About"
 import Contact from "./components/sections/Contact"
-import Experiences from "./components/sections/Experiences"
+import Footer from "./components/sections/Footer"
 import Hero from "./components/sections/Hero"
-import Portfolio from "./components/sections/Portfolio"
+import Projects from "./components/sections/Projects"
 import Services from "./components/sections/Services"
 import Skills from "./components/sections/Skills"
+import Testimonials from "./components/sections/Testimonials"
 
 function App() {
   return (
-    <main className="scrollbar-hide snap-y snap-mandatory overflow-y-auto scroll-smooth">
-      <Hero />
-      <About />
-      <Services />
-      <Experiences />
-      <Skills />
-      <Portfolio />
-      <Contact />
-    </main>
+    <>
+      <main className="scrollbar-hide snap-y snap-mandatory overflow-y-auto scroll-smooth">
+        <Hero />
+        <About />
+        <Services />
+        <Projects />
+        <Skills />
+        <Testimonials />
+        <Contact />
+      </main>
+      <footer>
+        <Footer />
+      </footer>
+    </>
   )
 }
 

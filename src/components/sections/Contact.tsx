@@ -1,22 +1,13 @@
-import {
-  HiOutlineEnvelope,
-  HiOutlineMapPin,
-  HiOutlinePhone,
-} from "react-icons/hi2"
+import { FaWhatsapp } from "react-icons/fa"
+import { HiOutlineEnvelope, HiOutlineMapPin } from "react-icons/hi2"
 
 export default function Contact() {
   const contacts = [
     {
-      name: "São José dos Campos",
-      description: "Centro, 123",
-      link: "#",
-      icon: <HiOutlineMapPin className="h-10 w-10" />,
-    },
-    {
-      name: "Celular",
+      name: "WhatsApp",
       description: "+55 12 9.999-9999",
       link: "tel:551299999999",
-      icon: <HiOutlinePhone className="h-10 w-10" />,
+      icon: <FaWhatsapp className="h-10 w-10" />,
     },
     {
       name: "Email",
@@ -24,11 +15,17 @@ export default function Contact() {
       link: "mailto:ffontouras@gmail.com",
       icon: <HiOutlineEnvelope className="h-10 w-10" />,
     },
+    {
+      name: "São José dos Campos",
+      description: "Centro, 123",
+      link: "#",
+      icon: <HiOutlineMapPin className="h-10 w-10" />,
+    },
   ]
 
   return (
     <section className="bg-blue-700 text-white">
-      <div className="container mx-auto max-w-7xl p-4 py-8">
+      <div className="container mx-auto max-w-4xl p-4 py-8">
         <div className="mb-6">
           <h2 className="z-50 mb-2">
             <span className="mr-2 font-headline text-3xl font-semibold">

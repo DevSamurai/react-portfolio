@@ -4,20 +4,20 @@ export default function Services() {
       title: "Web",
       description:
         "Desenvolvimento de sites e sistemas web estáticos e dinâmicos com React.js, Next.js, HTML5 e CSS3.",
-      backgroundColor: "bg-[#d6e5f1]",
-      textColor: "text-blue-900",
+      backgroundColor: "bg-blue-700",
+      textColor: "text-white",
     },
     {
       title: "Sistemas",
       description: "Desenvolvimento de sistemas e APIs REST com Node.js.",
-      backgroundColor: "bg-[#f1e2d6]",
-      textColor: "text-blue-900",
+      backgroundColor: "bg-blue-700",
+      textColor: "text-white",
     },
     {
       title: "Mobile",
       description: "Desenvolvimento de aplicativos Android e iOS.",
-      backgroundColor: "bg-[#f7f1fe]",
-      textColor: "text-blue-900",
+      backgroundColor: "bg-blue-700",
+      textColor: "text-white",
     },
   ]
 
