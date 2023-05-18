@@ -22,7 +22,7 @@ export default function Services() {
   ]
 
   return (
-    <section className="container mx-auto my-4 max-w-4xl p-4">
+    <section className="container mx-auto my-12 max-w-4xl p-4">
       <div className="p-4 text-center">
         <p className="text-sm font-semibold uppercase text-blue-600">
           O que faço de melhor

@@ -1,16 +1,16 @@
-import About from "./components/sections/About"
-import Contact from "./components/sections/Contact"
-import Footer from "./components/sections/Footer"
-import Hero from "./components/sections/Hero"
-import Projects from "./components/sections/Projects"
-import Services from "./components/sections/Services"
-import Skills from "./components/sections/Skills"
-import Testimonials from "./components/sections/Testimonials"
+import About from "./components/About"
+import Contact from "./components/Contact"
+import Footer from "./components/Footer"
+import Hero from "./components/Hero"
+import Projects from "./components/Projects"
+import Services from "./components/Services"
+import Skills from "./components/Skills"
+import Testimonials from "./components/Testimonials"
 
 function App() {
   return (
     <>
-      <main className="scrollbar-hide snap-y snap-mandatory overflow-y-auto scroll-smooth">
+      <main>
         <Hero />
         <About />
         <Services />

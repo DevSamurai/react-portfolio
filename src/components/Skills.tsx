@@ -73,20 +73,25 @@ export default function Skills() {
 
             <div className="grid grid-cols-1 gap-4 font-semibold md:grid-cols-2">
               {skills.map((skill, index) => (
-                <div key={`skill-${index}`}>
-                  <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-lg bg-white p-2">
+                <div
+                  key={`skill-${index}`}
+                  className="flex flex-row items-center gap-2 md:flex-col md:items-start"
+                >
+                  <div className="flex h-14 w-14 items-center justify-center rounded-lg bg-white p-2">
                     <img
                       src={skill.icon}
                       alt={skill.name}
                       className="h-10 w-10 rounded"
                     />
                   </div>
-                  <h4 className="font-headlin text-gray-900">{skill.name}</h4>
-                  <div className="h-2.5 w-full rounded-full bg-white">
-                    <div
-                      className="h-2.5 rounded-full bg-blue-600"
-                      style={{ width: `${skill.level}%` }}
-                    ></div>
+                  <div className="w-full flex-grow">
+                    <h4 className="font-headlin text-gray-900">{skill.name}</h4>
+                    <div className="h-2.5 w-full rounded-full bg-white">
+                      <div
+                        className="h-2.5 rounded-full bg-blue-600"
+                        style={{ width: `${skill.level}%` }}
+                      ></div>
+                    </div>
                   </div>
                 </div>
               ))}
