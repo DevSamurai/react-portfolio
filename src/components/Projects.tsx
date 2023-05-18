@@ -14,7 +14,7 @@ export default function Projects() {
       description: "Descrição do projeto 2",
       image: "https://via.placeholder.com/580x200",
       link: "#",
-      colSpan: "col-span-2",
+      colSpan: "col-span-1 md:col-span-2",
     },
     {
       title: "Projeto 3",
