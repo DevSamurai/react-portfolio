@@ -40,7 +40,7 @@ export default function Hero() {
               <a
                 href="https://docs.google.com/document/d/15J0W4Q0jL_pyLoKc0XR39r_QHkNrQMCIL2RnSzswx8o/edit?usp=sharing"
                 target="_blank"
-                className="button flex items-center gap-2"
+                className="button flex items-center gap-2 text-gray-600 hover:text-gray-900"
               >
                 <HiDownload />
                 Baixe meu CV
