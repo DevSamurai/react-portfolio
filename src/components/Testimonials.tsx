@@ -18,7 +18,7 @@ export default function Testimonials() {
         <FaQuoteLeft className="h-8 w-8 text-gray-600" />
         <blockquote className="mb-6">
           <p className="text-2xl text-gray-900">
-            Felipe me entregou o projeto no prazo e executando corretamente
+            João me entregou o projeto no prazo e executando corretamente
             conforme combinado no nosso contrato. Recomendo o trabalho dele para
             todos que desejam um trabalho sério.
           </p>
