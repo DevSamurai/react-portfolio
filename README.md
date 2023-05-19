@@ -27,7 +27,8 @@ npm preview
 2. [x] Instalar e configurar o TailwindCSS
 3. [x] Criar as sessões da página Home
 4. [x] Criando cada sessão/componente
-5. [x] Deploy da aplicação
+5. [x] Adicionando o serviço de envio de mensagens
+6. [x] Deploy da aplicação
 
 ### Passo 1: Criar o projeto com o Vite
 
@@ -203,7 +204,48 @@ Você pode consultar cada componente para que entenda como foi feito, mas não s
 
 ![Site final](./docs/images/site-final.png)
 
-## Passo 5: Deploy da aplicação
+## Passo 5: Criando a página de detalhes do projeto
+
+Para o envio de mensagens vamos utilizar o [EmailJS](https://www.emailjs.com/), que é um serviço gratuito de envio de formulários.
+
+Para isso, vamos instalar o pacote `@emailjs/browser`:
+
+```bash
+npm install @emailjs/browser
+```
+
+E depois ajustar o nosso componente `Contact` com o seguinte conteúdo:
+
+```tsx
+const sendEmail = (event: FormEvent<HTMLFormElement>) => {
+  event.preventDefault()
+
+  if (!form.current) return
+
+  setLoading(true)
+
+  emailjs
+    .sendForm(
+      "<service id>",
+      "<template id>",
+      form.current,
+      "<public key>"
+    )
+    .then(
+      () => {
+        setSuccess(true)
+        setLoading(false)
+      },
+      (error) => {
+        setError(true)
+        setLoading(false)
+        console.error(error)
+      }
+    )
+}
+```
+
+## Passo 6: Deploy da aplicação
 
 Para realizar o deploy da aplicação, vamos utilizar o [GitHub Pages](https://pages.github.com/), que é um serviço gratuito de hospedagem de sites estáticos.
 
@@ -260,3 +302,4 @@ No meu caso: <https://felipefontoura.github.io/react-portfolio/>
 Referências:
 
 - <https://pages.github.com/>
+- <https://vitejs.dev/guide/static-deploy.html#github-pages>
