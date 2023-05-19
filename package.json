@@ -3,7 +3,10 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://felipefontoura.github.io/react-portfolio/",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist -r git@github.com:felipefontoura/react-portfolio.git",
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
@@ -11,6 +14,7 @@
   },
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
+    "gh-pages": "^5.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.8.0"

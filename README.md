@@ -1,6 +1,6 @@
-# React 3D Portfolio
+# React Portfolio
 
-Este é o um portfólio 3D, feito com React e Three.js. Ele foi desenvolvido para o conteúdo da [Master Class #012](https://www.youtube.com/watch?v=_AcdTQM5xJM) da [Dev Samurai](https://devsamurai.com.br/).
+Este é o um portfólio feito com React. Ele foi desenvolvido para o conteúdo da [Master Class #012](https://www.youtube.com/watch?v=_AcdTQM5xJM) da [Dev Samurai](https://devsamurai.com.br/).
 
 [![Master Class #012](https://img.youtube.com/vi/_AcdTQM5xJM/0.jpg)](https://www.youtube.com/watch?v=_AcdTQM5xJM)
 
@@ -10,13 +10,24 @@ Caso o vídeo esteja como PRIVADO, isso significa que essa Master Class já saiu
 
 ## Como funciona
 
+Esta é uma aplicação React que utiliza o Vite como bundler e o TailwindCSS como framework CSS.
+
 ## Como executar
+
+Acesse o diretório do projeto e execute o comando:
+
+```bash
+npm install
+npm preview
+```
 
 ## Passo a passo
 
 1. [x] Criar o projeto com o Vite
 2. [x] Instalar e configurar o TailwindCSS
-3. [x] Criar as primeiras sessões da página Home
+3. [x] Criar as sessões da página Home
+4. [x] Criando cada sessão/componente
+5. [x] Deploy da aplicação
 
 ### Passo 1: Criar o projeto com o Vite
 
@@ -127,4 +138,125 @@ Referências:
 
 - <https://tailwindcss.com/docs/guides/vite>
 
-## Passo 3: Criar as primeiras sessões da página Home
+## Passo 3: Criar as sessões da página Home
+
+Nesta etapa iremos criar todas as sessões/componentes da página Home em seu estado inicial.
+
+- About: `./components/About.tsx`
+- Contact: `./components/Contact.tsx`
+- Footer: `./components/Footer.tsx`
+- Hero: `./components/Hero.tsx`
+- Projects: `./components/Projects.tsx`
+- Services: `./components/Services.tsx`
+- Skills: `./components/Skills.tsx`
+- Testimonials: `./components/Testimonials.tsx`
+
+Inicialmente cada sessão conterá apenas um título, por exemplo:
+
+```tsx
+export default function Hero() {
+  return (<h1>Hero</h1>)
+}
+```
+
+E com isso adicionamos todas as sessões na página Home:
+
+```tsx
+import About from "./components/About"
+import Contact from "./components/Contact"
+import Footer from "./components/Footer"
+import Hero from "./components/Hero"
+import Projects from "./components/Projects"
+import Services from "./components/Services"
+import Skills from "./components/Skills"
+import Testimonials from "./components/Testimonials"
+
+function App() {
+  return (
+    <>
+      <main>
+        <Hero />
+        <About />
+        <Services />
+        <Projects />
+        <Skills />
+        <Testimonials />
+        <Contact />
+      </main>
+      <footer>
+        <Footer />
+      </footer>
+    </>
+  )
+}
+
+export default App
+```
+
+Dessa forma já temos todas as sessões/componentes da página Home criadas e estamos prontos para iniciar a criação de cada uma.
+
+## Passo 4: Criando cada sessão/componente
+
+Chegou o momento de criamos cada sessão do nosso site, para isso vamos utilizar o TailwindCSS para nos ajudar com os estilos e estilizar cada uma para que possamos ter a seguinte aparência final.
+
+Você pode consultar cada componente para que entenda como foi feito, mas não se preocupe, pois explicamos cada detalhe no vídeo.
+
+![Site final](./docs/images/site-final.png)
+
+## Passo 5: Deploy da aplicação
+
+Para realizar o deploy da aplicação, vamos utilizar o [GitHub Pages](https://pages.github.com/), que é um serviço gratuito de hospedagem de sites estáticos.
+
+Para isso, vamos instalar o pacote `gh-pages`:
+
+```bash
+npm install -D gh-pages
+```
+
+E adicionar os seguintes scripts no arquivo `package.json`:
+
+```json
+{
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+  }
+}
+```
+
+Em seguida vamos configurar o arquivo `vite.config.ts` com o seguinte conteúdo:
+
+```ts
+import react from "@vitejs/plugin-react"
+import { defineConfig } from "vite"
+
+// https://vitejs.dev/config/
+export default defineConfig({
+  plugins: [react()],
+  base: "/<nome do seu repo>/", // <-- adicionar isso
+})
+```
+
+Para que possamos habilitar o deploy da aplicação, precisamos criar um repositório **público** no GitHub com um nome sugestivo: `portfolio`.
+
+E então, vamos adicionar o repositório remoto:
+
+```bash
+git remote add origin https://github.com/<nome do seu usuario>/<nome do seu repo>.git
+git commit -m "Initial commit"
+git push -u origin main
+```
+
+Por fim, executar o comando de build e deploy:
+
+```bash
+npm run deploy
+```
+
+E finalmente acessar o endereço `https://<nome do seu usuário>.github.io/<nome do seu repo>`.
+
+No meu caso: <https://felipefontoura.github.io/react-portfolio/>
+
+Referências:
+
+- <https://pages.github.com/>
