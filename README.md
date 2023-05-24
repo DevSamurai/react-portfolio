@@ -2,11 +2,35 @@
 
 Este é o um portfólio feito com React. Ele foi desenvolvido para o conteúdo da [Master Class #012](https://www.youtube.com/watch?v=_AcdTQM5xJM) da [Dev Samurai](https://devsamurai.com.br/).
 
-[![Master Class #012](https://img.youtube.com/vi/_AcdTQM5xJM/0.jpg)](https://www.youtube.com/watch?v=_AcdTQM5xJM)
+## Por que um Dev precisa de um portfólio?
 
-🚨 **AVISO IMPORTANTE** 🚨
+Um portfólio é importante para que você possa se diferenciar dos demais desenvolvedores. Ele é uma forma de você mostrar o que você sabe fazer, o que você já fez e o que você está fazendo.
 
-Caso o vídeo esteja como PRIVADO, isso significa que essa Master Class já saiu do ar e está disponível apenas na nossa [comunidade](https://lp.devsamurai.com.br/wue3c2p5/?xpromo=yt-_AcdTQM5xJM).
+Por isso, um portfólio é "vivo", você precisa constantemente atualizá-lo com os seus novos projetos e novas habilidades.
+
+Em 2023, mais do que nunca, um Dev precisa de um portfólio! Já que o mercado está ficando cada vez mais competitivo e exigente.
+
+O "pessoal do RH" já não tem mais tempo para ficar lendo currículos e muito menos para ficar analisando o seu GitHub. Eles precisam de algo mais rápido e objetivo, e é aí que entra o seu portfólio.
+
+Esse pessoal possuem metas e precisam "bater o olho" e saber "de cara", em poucos segundos, o que você faz, e como faz melhor que o seu competidor.
+
+Ainda mais se você é um iniciante! Já que você não tem muita experiência para colocar no currículo, e nem muitos projetos para mostrar no GitHub.
+
+Portanto, um portfólio é importante se você deseja se destacar (positivamente) no mercado de trabalho.
+
+### Quais as sessões que um portfólio deve ter?
+
+Um portfólio para Dev Júnior deve conter as seguintes sessões:
+
+- Banner: com uma foto sua e uma breve descrição sobre você.
+- Sobre: com uma descrição mais detalhada.
+- Serviços: com os 3 serviços principais que você oferece.
+- Skills: com as suas habilidades técnicas e formações.
+- Projetos: com os seus principais projetos.
+- Testemunhos: com depoimentos de clientes e/ou colegas de trabalho.
+- Contato: com um formulário de contato e/ou links para as suas redes sociais.
+
+Além disso o seu portfólio deve possuir um design responsivo e bonito, ou seja, que se adapte a qualquer tamanho de tela. E principalmente que seja fácil de navegar e rápido de carregar.
 
 ## Como funciona
 
